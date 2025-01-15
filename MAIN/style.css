@@ -11,10 +11,10 @@
     background-image: url(sindri3.png);
     background-size: cover;
     
-   
+    /*background: linear-gradient(#8dd4f7,#9080fa 85%) no-repeat;*/
     margin-top:53px;
     position: relative;
-   
+    /*background-blend-mode: soft-light;*/
 }
 
 #logos{
@@ -224,6 +224,7 @@ section p span{
         background-image: url("about5.png");
     }
 }
+
 section p span:hover{
     transition: 0s;
     font-size: 4em;

@@ -142,6 +142,15 @@ gsap.from(".motto",{
     end: "bottom 20%",
     toggleActions: "play none none none"
 })
+gsap.from("#gallery",{
+  opacity:0,
+  duration:2,
+  delay:0.5,
+  x:500,
+  y:200,
+  scrollTrigger: ".swiper-head",
+ 
+})
 
 gsap.from("#imageabout",{
   scrollTrigger: "#imageabout",

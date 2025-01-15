@@ -7,7 +7,7 @@ let thumbnails = document.querySelectorAll('.thumbnail .item');
 // config param
 let countItem = items.length;
 let itemActive = 0;
-// event next click
+// For the next click event
 next.onclick = function(){
     itemActive = itemActive + 1;
     if(itemActive >= countItem){
@@ -15,7 +15,7 @@ next.onclick = function(){
     }
     showSlider();
 }
-//event prev click
+//For the previous click event
 prev.onclick = function(){
     itemActive = itemActive - 1;
     if(itemActive < 0){
@@ -23,18 +23,18 @@ prev.onclick = function(){
     }
     showSlider();
 }
-// auto run slider
+// For the auto running slider
 let refreshInterval = setInterval(() => {
     next.click();
 }, 5000)
 function showSlider(){
-    // remove item active old
+    // To remove active old item
     let itemActiveOld = document.querySelector('.slider .list .item.active');
     let thumbnailActiveOld = document.querySelector('.thumbnail .item.active');
     itemActiveOld.classList.remove('active');
     thumbnailActiveOld.classList.remove('active');
 
-    // active new item
+    // For active new item
     items[itemActive].classList.add('active');
     thumbnails[itemActive].classList.add('active');
     setPositionThumbnail();
@@ -53,7 +53,7 @@ function setPositionThumbnail () {
     }
 }
 
-// click thumbnail
+// For the click thumbnail
 thumbnails.forEach((thumbnail, index) => {
     thumbnail.addEventListener('click', () => {
         itemActive = index;

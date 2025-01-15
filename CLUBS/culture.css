@@ -19,6 +19,7 @@ html,body{
     opacity:0;
     display: none;
 }
+
 #main{
     height: 100vh;
     width: 100%;
@@ -60,7 +61,7 @@ html,body{
     height: 100%;
     width: 26%;
     
-   /* background-color: red;*/
+
 }
 #part2{
     height: 100%;
@@ -78,7 +79,7 @@ html,body{
 #part3{
     height: 100%;
     width: 7%;
-    /*background-color: green;*/
+    
     
 }
 #text-div{
